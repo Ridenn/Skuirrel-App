@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "105463867977",
+    "project_id": "skuirrelapp",
+    "storage_bucket": "skuirrelapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105463867977:android:15e8fda419bdadc563ad98",
+        "android_client_info": {
+          "package_name": "com.example.skuirrel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105463867977-it6eqo9qlrlil0utf2efljqp1ljolq7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD26CldmDMTfDQtOuyOv2TJIUrfjnMpjnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105463867977-it6eqo9qlrlil0utf2efljqp1ljolq7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

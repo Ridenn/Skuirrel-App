@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_navigation"
+    app:startDestination="@+id/detailsFragment">
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.skuirrel.View.fragment.DetailsFragment"
+        android:label="DetailsFragment"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/to_mainActivity"
+            app:enterAnim="@anim/transaction_fade_enter"
+            app:exitAnim="@anim/transaction_fade_exit"
+            app:popUpTo="@id/detailsFragment"
+            app:destination="@id/mainActivity2" />
+        <action
+            android:id="@+id/to_details"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/transaction_fade_enter"
+            app:exitAnim="@anim/transaction_fade_exit"
+            app:popUpTo="@id/detailsFragment" />
+
+        <argument
+            android:name="selectedMovie"
+            app:argType="com.example.skuirrel.Model.Movie"
+            />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.skuirrel.View.activity.MainActivity"
+        android:label="MainActivity" />
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.example.skuirrel.View.activity.DetailsActivity"
+        android:label="DetailsActivity" />
+</navigation>

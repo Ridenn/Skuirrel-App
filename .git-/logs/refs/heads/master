@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 5b3e114125ea4b5cca6a2b57690ac33e49961da6 Lucas <lucaspedrosa11@hotmail.com> 1638849713 -0300	clone: from https://ridenn@bitbucket.org/ridenn/android-challenge.git
+5b3e114125ea4b5cca6a2b57690ac33e49961da6 1ee58b30e9259c5b31b656216efdc7ac1fdf677e Lucas <lucaspedrosa11@hotmail.com> 1638850453 -0300	commit: Initial commit
+1ee58b30e9259c5b31b656216efdc7ac1fdf677e 0c4f47452ef00e8d1a4103e1dd4448721ed19fe7 Lucas <lucaspedrosa11@hotmail.com> 1638898831 -0300	commit: Created Splash Screen layout
+0c4f47452ef00e8d1a4103e1dd4448721ed19fe7 4511b7a6357a0baaadcba0d59ccf7cbe47eac3f7 Lucas <lucaspedrosa11@hotmail.com> 1638923447 -0300	commit: Added Firebase authentication and created splash screen, login and register flows
+4511b7a6357a0baaadcba0d59ccf7cbe47eac3f7 df258216a26dad56348a5fd94a00301b95ad88f4 Lucas <lucaspedrosa11@hotmail.com> 1639328765 -0300	commit: Created Movie list screen and more features
+df258216a26dad56348a5fd94a00301b95ad88f4 8a1a0b04d6d9a3d6790830a4ffc60c2358ac49ae Lucas <lucaspedrosa11@hotmail.com> 1639333847 -0300	commit: Created favorite movies/shows screen
+8a1a0b04d6d9a3d6790830a4ffc60c2358ac49ae a9fa86022960737a35a456997885f65a66ce2f1d Lucas <lucaspedrosa11@hotmail.com> 1639348477 -0300	commit: Added feature to favorite movie
+a9fa86022960737a35a456997885f65a66ce2f1d ebc5d66ce10e6c956adc27fc4b7fb5d7b54a4231 Lucas <lucaspedrosa11@hotmail.com> 1639349890 -0300	commit: Fixed Fragment Movies
+ebc5d66ce10e6c956adc27fc4b7fb5d7b54a4231 c1cfd127207d4ef8b005d9abc9e63cc9c8839f24 Lucas <lucaspedrosa11@hotmail.com> 1639350001 -0300	commit: Minor fixes
+c1cfd127207d4ef8b005d9abc9e63cc9c8839f24 9b6bb4dd842d6e6c82eecbd1af516ee740ab61e0 Lucas <lucaspedrosa11@hotmail.com> 1639357356 -0300	commit: Added movies carousel to movies details
+9b6bb4dd842d6e6c82eecbd1af516ee740ab61e0 e1add96ec0829265394f7b31075a89e08ff847e0 Lucas <lucaspedrosa11@hotmail.com> 1639358018 -0300	commit: Minor fixes and details
+e1add96ec0829265394f7b31075a89e08ff847e0 923367b278c167f86e14c50055a26e50971d262d Lucas <lucaspedrosa11@hotmail.com> 1639371173 -0300	commit: Created first UI tests

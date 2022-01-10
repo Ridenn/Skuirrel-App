@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/moviesFragment">
+
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.example.skuirrel.View.fragment.MoviesFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_movies" >
+        <action
+            android:id="@+id/to_details"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/transaction_fade_enter"
+            app:exitAnim="@anim/transaction_fade_exit"
+            app:popUpTo="@id/moviesFragment" />
+<!--        <action-->
+<!--            android:id="@+id/to_detailss"-->
+<!--            app:destination="@id/detailsActivity"-->
+<!--            app:enterAnim="@anim/transaction_fade_enter"-->
+<!--            app:exitAnim="@anim/transaction_fade_exit"-->
+<!--            app:popUpTo="@id/moviesFragment" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/seriesFragment"
+        android:name="com.example.skuirrel.View.fragment.SeriesFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_series" />
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.skuirrel.View.fragment.FavoritesFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/to_details"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/transaction_fade_enter"
+            app:exitAnim="@anim/transaction_fade_exit"
+            app:popUpTo="@id/favoritesFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.skuirrel.View.fragment.DetailsFragment"
+        android:label="DetailsFragment">
+
+        <argument
+            android:name="selectedMovie"
+            app:argType="com.example.skuirrel.Model.Movie"
+            />
+        <action
+            android:id="@+id/to_details"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/transaction_fade_enter"
+            app:exitAnim="@anim/transaction_fade_exit"
+            app:popUpTo="@id/detailsFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.example.skuirrel.View.activity.DetailsActivity"
+        android:label="DetailsActivity">
+
+        <argument
+            android:name="selectedMovie"
+            app:argType="com.example.skuirrel.Model.Movie"
+            />
+
+    </activity>
+
+</navigation>
