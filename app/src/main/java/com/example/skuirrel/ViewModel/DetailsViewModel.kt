@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.skuirrel.Data.repositories.FavoritesRepositoryImpl
 import com.example.skuirrel.Data.repositories.MoviesRepositoryImpl
-import com.example.skuirrel.Data.utils.FavoriteBody
+import com.example.skuirrel.Data.model.FavoriteMedia
 import com.example.skuirrel.View.viewstate.DetailsViewState
 import com.example.skuirrel.Model.Movie
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -56,9 +56,9 @@ class DetailsViewModel @Inject constructor(
                 ))
     }
 
-    fun favoriteContent(body: FavoriteBody){
+    fun favoriteContent(media: FavoriteMedia){
         add(
-            favoritesRepository.favoriteContent(body)
+            favoritesRepository.favoriteContent(media)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({

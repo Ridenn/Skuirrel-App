@@ -4,11 +4,10 @@ import com.example.skuirrel.Data.ApiService
 import com.example.skuirrel.Data.mappers.FavoritesResponseMapper
 import com.example.skuirrel.Data.mappers.VideosFavoritesResponseMapper
 import com.example.skuirrel.Data.response.FavoriteResponse
-import com.example.skuirrel.Data.response.MovieResponse
 import com.example.skuirrel.Data.utils.Constants.ACC_ID
 import com.example.skuirrel.Data.utils.Constants.API_KEY
 import com.example.skuirrel.Data.utils.Constants.SESSION_ID
-import com.example.skuirrel.Data.utils.FavoriteBody
+import com.example.skuirrel.Data.model.FavoriteMedia
 import com.example.skuirrel.Model.Movie
 import com.example.skuirrel.Model.Videos
 import io.reactivex.Single
@@ -69,11 +68,11 @@ class FavoritesRepositoryImpl @Inject constructor(
             }
     }
 
-    override fun favoriteContent(body: FavoriteBody): Single<FavoriteResponse> {
+    override fun favoriteContent(media: FavoriteMedia): Single<FavoriteResponse> {
         return apiService.favoriteContent(ACC_ID,
             API_KEY,
             SESSION_ID,
-            body
+            media
         )
     }
 

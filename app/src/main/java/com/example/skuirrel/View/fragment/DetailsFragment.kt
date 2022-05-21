@@ -17,7 +17,7 @@ import com.example.skuirrel.Adapter.MoviesAdapter
 import com.example.skuirrel.Adapter.VideosAdapter
 import com.example.skuirrel.Data.utils.Constants.BASE_IMAGE_LARGE
 import com.example.skuirrel.Data.utils.Constants.YOUTUBE_VIDEOS_BASE_URL
-import com.example.skuirrel.Data.utils.FavoriteBody
+import com.example.skuirrel.Data.model.FavoriteMedia
 import com.example.skuirrel.Model.Movie
 import com.example.skuirrel.Model.Videos
 import com.example.skuirrel.R
@@ -94,7 +94,7 @@ class DetailsFragment() : Fragment(R.layout.fragment_details) {
             //variavel 'favorite' nao tem importancia no valor passado (true/false),
             //ele só favorita o filme, nunca desfavorita, por algum motivo
 
-            val favoriteBody = FavoriteBody(
+            val favoriteBody = FavoriteMedia(
                 "movie",
                 movie.id,
                 true
