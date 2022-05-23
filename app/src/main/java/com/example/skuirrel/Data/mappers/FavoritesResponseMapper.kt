@@ -1,7 +1,6 @@
 package com.example.skuirrel.Data.mappers
 
-import com.example.skuirrel.Data.response.MovieResponse
-import com.example.skuirrel.Data.response.MovieResults
+import com.example.skuirrel.Data.model.MovieResults
 import com.example.skuirrel.Model.Movie
 import javax.inject.Inject
 

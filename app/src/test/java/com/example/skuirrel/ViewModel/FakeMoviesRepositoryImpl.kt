@@ -23,6 +23,10 @@ class FakeMoviesRepositoryImpl @Inject constructor(
         return listVideos
     }
 
+    override fun getFavoriteMovies(): Single<List<Movie>> {
+        return listMovies
+    }
+
 //    companion object {
 //        fun create(returns: Single<List<Movie>>) : MoviesRepositoryImpl {
 //            return MoviesRepositoryImpl(

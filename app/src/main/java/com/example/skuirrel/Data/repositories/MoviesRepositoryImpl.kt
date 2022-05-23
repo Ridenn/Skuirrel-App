@@ -18,27 +18,29 @@ class MoviesRepositoryImpl @Inject constructor(
 ) : MoviesRepository {
 
     override fun getLastMovies(sortBy: String): Single<List<Movie>> {
-
-        return apiService.getLastMovies(API_KEY, "en-us",
-            sortBy, "false", "false", 1)
+        return apiService.getLastMovies(API_KEY, EN_US,
+            sortBy, FALSE, FALSE, 1)
             .map { movie ->
                 movieMapper.mapToDomainList(movie.results)
             }
     }
 
     override fun getVideos(id: Int): Single<List<Videos>> {
-
-        return apiService.getMovieVideos(id, API_KEY, "en-us")
+        return apiService.getMovieVideos(id, API_KEY, EN_US)
             .map { videos ->
                 videosMapper.mapToDomainList(videos.results)
             }
     }
 
     override fun getFavoriteMovies(): Single<List<Movie>> {
-
         return apiService.getFavoriteMovies(ACC_ID, API_KEY, SESSION_ID)
             .map { movie ->
                 movieMapper.mapToDomainList(movie.results)
             }
+    }
+
+    companion object {
+        const val EN_US = "en-us"
+        const val FALSE = "false"
     }
 }

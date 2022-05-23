@@ -1,4 +1,4 @@
-package test
+package com.example.skuirrel
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

@@ -1,8 +1,8 @@
 package com.example.skuirrel.Data
 
-import com.example.skuirrel.Data.response.FavoriteResponse
-import com.example.skuirrel.Data.response.MovieResponse
-import com.example.skuirrel.Data.response.VideosResponse
+import com.example.skuirrel.Data.model.FavoriteResponse
+import com.example.skuirrel.Data.model.MovieResponse
+import com.example.skuirrel.Data.model.VideosResponse
 import com.example.skuirrel.Data.model.FavoriteMedia
 import com.example.skuirrel.Data.utils.Constants.API_GET_FAVORITE_CONTENT
 import com.example.skuirrel.Data.utils.Constants.API_GET_FAVORITE_MOVIES

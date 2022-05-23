@@ -1,6 +1,6 @@
 package com.example.skuirrel.Data.mappers
 
-import com.example.skuirrel.Data.response.VideosResults
+import com.example.skuirrel.Data.model.VideosResults
 import com.example.skuirrel.Model.Videos
 import javax.inject.Inject
 

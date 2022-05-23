@@ -31,7 +31,6 @@ class MoviesAdapter(private val onClickListener: OnClickListener) : RecyclerView
         }
 
         //holder.bind(movies)
-
         holder.bind(allMovies[position])
     }
 
@@ -59,10 +58,8 @@ class MoviesAdapter(private val onClickListener: OnClickListener) : RecyclerView
     }
 
     fun updateList(movies: List<Movie>){
-        with(allMovies){
-            allMovies.clear()
-            allMovies.addAll(movies)
-        }
+        allMovies.clear()
+        allMovies.addAll(movies)
         notifyDataSetChanged()
     }
 

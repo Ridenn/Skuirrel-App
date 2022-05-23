@@ -1,4 +1,4 @@
-package com.example.skuirrel.Data.response
+package com.example.skuirrel.Data.model
 
 import com.squareup.moshi.Json
 
