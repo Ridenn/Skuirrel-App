@@ -57,6 +57,7 @@
 - Retrofit
 - Picasso
 - Firebase (Authentication)
+- Moshi
 
 ## License
 
